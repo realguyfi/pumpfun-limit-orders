@@ -1,0 +1,46 @@
+{
+  "name": "pump-limit-order-bot",
+  "version": "1.0.0",
+  "description": "Simple limit order bot for pump.fun tokens",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/interactive.js",
+    "dev": "ts-node src/interactive.ts",
+    "bot": "node dist/interactive.js",
+    "cli": "node dist/index.js",
+    "setup": "npm install && npm run build && echo 'Setup complete! Run npm start to begin.'"
+  },
+  "keywords": [
+    "solana",
+    "pump.fun",
+    "trading",
+    "bot"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.87.6",
+    "axios": "^1.6.2",
+    "bs58": "^5.0.0",
+    "chalk": "^4.1.2",
+    "cli-table3": "^0.6.3",
+    "commander": "^11.1.0",
+    "dotenv": "^16.3.1",
+    "figlet": "^1.7.0",
+    "inquirer": "^8.2.6",
+    "node-fetch": "^2.7.0",
+    "ora": "^5.4.1",
+    "sqlite3": "^5.1.6",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.5.8",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.10.5",
+    "@types/node-fetch": "^2.6.12",
+    "@types/uuid": "^9.0.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
